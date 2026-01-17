@@ -74,11 +74,11 @@ footer {
   background: #e6b800;
 }
 
-/* Product image grid */
+/* Product image grid – controlled size */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(3, 1fr); /* side by side */
+  gap: 1rem;
   margin-top: 1rem;
 }
 
@@ -88,14 +88,23 @@ footer {
 
 .product img {
   width: 100%;
+  max-width: 220px;   /* keeps images smaller */
   height: auto;
   border-radius: 6px;
   border: 1px solid #333;
+  margin: 0 auto;     /* centers image */
+  display: block;
 }
 
 .product p {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
   color: #ddd;
 }
 
+/* Mobile fix */
+@media (max-width: 700px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
