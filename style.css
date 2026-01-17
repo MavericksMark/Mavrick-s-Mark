@@ -74,12 +74,13 @@ footer {
   background: #e6b800;
 }
 
-/* Product image grid – controlled size */
+/* Product image grid – forced side by side */
 .product-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* side by side */
+  display: flex;
+  justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
+  flex-wrap: nowrap; /* forces one row */
 }
 
 .product {
@@ -87,12 +88,10 @@ footer {
 }
 
 .product img {
-  width: 100%;
-  max-width: 220px;   /* keeps images smaller */
+  width: 200px;       /* hard size so it cannot expand */
   height: auto;
   border-radius: 6px;
   border: 1px solid #333;
-  margin: 0 auto;     /* centers image */
   display: block;
 }
 
@@ -102,9 +101,15 @@ footer {
   color: #ddd;
 }
 
-/* Mobile fix */
+/* Mobile: allow stacking */
 @media (max-width: 700px) {
   .product-grid {
-    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+  }
+
+  .product img {
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto;
   }
 }
