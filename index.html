@@ -1,79 +1,87 @@
-<!doctype html>
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mavericks Mark</title>
-  <style>
-    body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#0f0f0f;color:#f5f5f5}
-    .wrap{max-width:900px;margin:0 auto;padding:28px}
-    header{padding:28px 0;border-bottom:1px solid #2a2a2a}
-    h1{margin:0;font-size:40px;letter-spacing:0.5px}
-    .tag{margin-top:10px;color:#bdbdbd}
-    .card{background:#171717;border:1px solid #2a2a2a;border-radius:14px;padding:18px;margin:18px 0}
-    .btn{display:inline-block;background:#f5f5f5;color:#0f0f0f;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-    footer{padding:24px 0;color:#bdbdbd;border-top:1px solid #2a2a2a;margin-top:28px}
-    small{color:#9a9a9a}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mavericks Mark</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        text-align: center;
+    }
+
+    header {
+        background-color: #111;
+        color: white;
+        padding: 30px 10px;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+
+    .content {
+        padding: 40px 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .description {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .gallery img {
+        width: 250px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    footer {
+        background-color: #111;
+        color: white;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 16px;
+    }
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <h1>Mavericks Mark</h1>
-      <div class="tag">Bold. Sarcastic. Southern.</div>
-    </header>
 
-    <div class="card">
-      <h2>What we make</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Engraved Signs</h3>
-          <small>11x11 & custom sizes</small>
-    
-        </section>
-        <div class="card">
-          <h3>Coasters</h3>
-          <small>Cork, slate, wood</small>
-        </div>
-        <div class="card">
-          <h3>Magnets + Tags</h3>
-          <small>Impulse-buy gifts</small>
-        </div>
-        </div>
-        <section class="card">
-  <h2>Products</h2>
-  <p>Handmade laser-engraved items with Southern attitude.</p>
+<header>
+    MAVRICKS MARK
+</header>
 
-      </div>
+<div class="content">
+    <div class="description">
+        Welcome to Mavericks Mark!  
+        I design and handcraft custom engraved signs that bring personality and character to homes, farms, and businesses.  
+        Each piece is made with care, creativity, and a touch of Southern pride.
     </div>
 
-    <div class="card">
-      <h2>Order / Custom Work</h2>
-      <p>Message us for custom engraving, bulk orders, or local pickup.</p>
-      <p>
-        <a class="btn" href="mailto:YOUR_EMAIL_HERE">Email Mavericks Mark</a>
-      </p>
-      <p><small>Tip: replace YOUR_EMAIL_HERE with your email address.</small></p>
+    <div class="gallery">
+        <img src="cluck.jpg" alt="Cluck Sign">
+        <img src="moo.jpg" alt="Moo Sign">
+        <img src="oink.jpg" alt="Oink Sign">
     </div>
+</div>
 
-    <div class="card">
-      <h2>Follow</h2>
-      <p>Add your TikTok / Facebook / Instagram links here.</p>
-      <ul>
-        <li><a href="#" style="color:#f5f5f5">TikTok</a></li>
-        <li><a href="#" style="color:#f5f5f5">Facebook</a></li>
-      </ul>
-    </div>
+<footer>
+    Get in touch:<br>
+    Email: yourname@example.com<br>
+    Phone: (555) 555-5555<br>
+    Facebook: Mavericks Mark
+</footer>
 
-    <footer>
-      <div>© <span id="y"></span> Mavericks Mark</div>
-      <small>Made in Georgia.</small>
-    </footer>
-  </div>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
