@@ -55,6 +55,11 @@
         font-size: 16px;
     }
 </style>
+    <!-- Lightbox2 CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" integrity="sha512-ZKX2vQbLlA5tRA5rLFw2IBPBL2AOD3xcy+7T1646UAx8hV3v6XvMN5xklQeK6l2kDKn2+0oI5W+Jb3Ab+jmA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Lightbox2 JS (at the very end of <body>, before </body>) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixz4nH2E0fG6Y2hKy0+FGh0u2kgvKkBHt74f3zWHOa0VTNkJXQf+7o2XEwK+0q0VImW/g3+4cM8v+0KW9Qb+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 
@@ -70,7 +75,9 @@
     </div>
 
     <div class="gallery">
-        <img src="cluck.jpg" alt="Cluck Sign">
+        <a href="cluck.jpg" data-lightbox="gallery" data-title="My Sister's Choice...">
+  <img src="cluck.jpg" alt="Sign 1">
+</a>
         <img src="moo.jpg" alt="Moo Sign">
         <img src="oink.jpg" alt="Oink Sign">
         <img src="chickehite.jpg" alt="Colored Sign">
