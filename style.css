@@ -169,3 +169,105 @@ footer {
     .tagline { font-size: 1.5rem; }
     nav ul { gap: 1.5rem; font-size: 1rem; }
 }
+
+/* Shop Hero */
+.shop-hero {
+    text-align: center;
+    padding: 5rem 1rem 4rem;
+    background: linear-gradient(to bottom, #000, #111);
+}
+
+.shop-hero h1 {
+    font-size: 3.8rem;
+    color: #e63946;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.shop-hero p {
+    font-size: 1.4rem;
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Products Grid */
+.products {
+    padding: 4rem 0;
+    background: #000;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.product-card {
+    background: #111;
+    border: 1px solid #e63946;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(230, 57, 70, 0.25);
+}
+
+.product-image-placeholder {
+    height: 220px;
+    background: #222;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+    font-style: italic;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    color: #fff8e1;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 1.6rem;
+    color: #e63946;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.desc {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 1.2rem;
+    min-height: 60px;
+}
+
+.product-card .btn {
+    background: #e63946;
+    color: #000;
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-card .btn:hover {
+    background: #ff4d4d;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+    .shop-hero h1 { font-size: 2.8rem; }
+    .product-grid { gap: 2rem; }
+}
