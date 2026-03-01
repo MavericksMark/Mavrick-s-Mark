@@ -271,3 +271,21 @@ footer {
     .shop-hero h1 { font-size: 2.8rem; }
     .product-grid { gap: 2rem; }
 }
+
+.product-image {
+    width: 100%;                /* fills the card width */
+    max-width: 260px;           /* maximum size — change this to whatever you want */
+    height: auto;               /* keeps proportions */
+    display: block;
+    margin: 0 auto 1.2rem;      /* centers it and adds bottom spacing */
+    object-fit: contain;        /* shows full image without cropping */
+    border-radius: 8px;
+    background: #111;           /* fallback background if transparent */
+}
+
+/* Optional: Make it smaller on mobile */
+@media (max-width: 768px) {
+    .product-image {
+        max-width: 220px;       /* smaller on phones — adjust as needed */
+    }
+}
