@@ -273,7 +273,7 @@ footer {
 }
 
 .product-image {
-    width: 100%;                /* fills the card width */
+    width: 10%;                /* fills the card width */
     max-width: 260px;           /* maximum size — change this to whatever you want */
     height: auto;               /* keeps proportions */
     display: block;
