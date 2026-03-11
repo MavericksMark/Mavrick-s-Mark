@@ -23,46 +23,42 @@ body {
 /* Header (used on both pages) */
 header {
     background: #000;
-    padding: 0.8rem 1rem;
-    border-bottom: 2px solid #e63946; /* red accent */
+    border-bottom: 2px solid #e63946;
     position: relative;
     top: 0;
     z-index: 100;
-
+    padding: 0.8rem 1rem;
+}
+.header-inner {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.logo-wrapper {
-    margin: 0;
+.logo-area {
+    flex-shrink: 0;
 }
 
 .logo {
-    width: 50px;
+    width: 120px;
     height: auto;
     display: block;
 }
 
-nav ul {
-    list-style: none;
+.nav-links {
     display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
-nav a {
-    color: #fff8e1;
+.nav-links a {
+    color: #fff;
     text-decoration: none;
-    font-size: 1.1rem;
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s;
 }
 
-nav a:hover {
+.nav-links a:hover {
     color: #e63946;
 }
 
