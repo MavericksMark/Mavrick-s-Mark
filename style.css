@@ -24,21 +24,18 @@ body {
 header {
     background: #000;
     border-bottom: 2px solid #e63946;
-    position: relative;
-    top: 0;
-    z-index: 100;
-    padding: 0.8rem 1rem;
+    padding: 1rem 2rem;
 }
-.header-inner {
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
 }
 
-.logo-area {
-    flex-shrink: 0;
+.logo-link {
+    display: inline-block;
 }
 
 .logo {
@@ -47,20 +44,23 @@ header {
     display: block;
 }
 
-.nav-links {
+.header-nav {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
+    align-items: center;
 }
 
-.nav-links a {
+.header-nav a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
-.nav-links a:hover {
+.header-nav a:hover {
     color: #e63946;
 }
+
 
 .current {
     color: #e63946;
