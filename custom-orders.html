@@ -3,129 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maverick's Mark - Custom Orders</title>
+    <title>Maverick's Mark – Funny Sarcastic Decals & Custom Designs</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Internal CSS to keep the form looking sharp without touching your main sheet */
-        .order-form-container {
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #111;
-            border: 1px solid #333;
-            border-radius: 8px;
-        }
-        .form-group {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 15px;
-        }
-        .order-form input, .order-form textarea, .order-form select {
-            width: 100%;
-            padding: 12px;
-            background: #1a1a1a;
-            border: 1px solid #444;
-            color: #fff;
-            font-family: inherit;
-        }
-        .order-form input:focus, .order-form textarea:focus {
-            border-color: #ff0000;
-            outline: none;
-        }
-        .pricing-callout {
-            background: #222;
-            padding: 15px;
-            border-left: 4px solid #ff0000;
-            margin-bottom: 25px;
-        }
-        .submit-btn {
-            width: 100%;
-            padding: 15px;
-            background: #ff0000;
-            color: white;
-            border: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .submit-btn:hover {
-            background: #cc0000;
-        }
-        @media (max-width: 600px) {
-            .form-group { flex-direction: column; }
-        }
-    </style>
 </head>
 <body>
 
-<header>
+    <header>
     <div class="header-container">
         <a href="index.html" class="logo-link">
-            [span_4](start_span)<img src="logo.jpg" alt="Maverick's Mark Logo" class="logo">[span_4](end_span)
+            <img src="logo.jpg" alt="Maverick's Mark Logo" class="logo">
         </a>
+
         <nav class="header-nav">
-            [span_5](start_span)<a href="index.html">Home</a>[span_5](end_span)
-            [span_6](start_span)<a href="shop.html">Shop Decals</a>[span_6](end_span)
-            [span_7](start_span)<a href="#contact">Contact</a>[span_7](end_span)
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop Decals</a>
+            <a href="#contact">Contact</a>
         </nav>
     </div>
-</header>
+    </header>
 
-<section class="custom-hero">
-    <div class="container">
-        [span_8](start_span)<h1>Bring Your Bad Idea to Life</h1>[span_8](end_span)
-        <p class="lead">Welcome to Maverick's Mark. [span_9](start_span)[span_10](start_span)[span_11](start_span)I turn your inside jokes and petty revenge fantasies into weatherproof vinyl glory.[span_9](end_span)[span_10](end_span)[span_11](end_span)</p>
-        
-        <div class="pricing-callout">
-            <h3>The Deal:</h3>
-            [span_12](start_span)<p><strong>$10</strong> gets you a <strong>6" x 6"</strong> custom decal.[span_12](end_span) 
-            [span_13](start_span)<br>Shipping is <strong>included</strong>.[span_13](end_span)
-            <br>Need it bigger? [span_14](start_span)It's just <strong>$1 more for every additional inch</strong>.[span_14](end_span)</p>
+    <section class="custom-hero">
+        <div class="container">
+            <h1>Bring Your Bad Idea to Life</h1>
+            <p class="lead">No judgment. No limits. Just tell the devil what you want on a sticker.</p>
+            <p class="sublead">Roast your ex, memorialize your worst decision, make your boss cry — we print it.</p>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="order-submission">
-    <div class="container">
-        <div class="order-form-container">
-            <form action="https://formspree.io/f/xmavericksmarkx@gmail.com" method="POST" class="order-form">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+    <section class="custom-process">
+        <div class="container">
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Spill the Chaos</h3>
+                    <p>Text, DM, email, carrier pigeon — whatever. Send us your text, inside joke, petty revenge fantasy, or cursed photo idea.</p>
                 </div>
-                
-                <div class="form-group">
-                    <input type="text" name="size" placeholder="Size (e.g. 6x6, 10x10)" required>
-                    <select name="color" required>
-                        <option value="" disabled selected>Select Color</option>
-                        <option value="White">White</option>
-                        <option value="Black">Black</option>
-                        <option value="Red">Red</option>
-                        <option value="Other">Other (Specify in notes)</option>
-                    </select>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>We Make It Evil</h3>
+                    <p>We turn your nonsense into clean, sharp vector art. You approve (or tell us to make it meaner). No extra charge for savagery.</p>
                 </div>
-
-                <textarea name="message" rows="5" placeholder="What do you want it to say? Describe the design or the joke here..." required></textarea>
-                
-                <input type="hidden" name="_subject" value="New Custom Order - Maverick's Mark">
-                <button type="submit" class="submit-btn">Submit My Chaos</button>
-            </form>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>It Ships & Sticks</h3>
+                    <p>High-quality glossy vinyl, weatherproof, UV-resistant, dishwasher-safe. Slapped on your ride, laptop, cooler, or forehead.</p>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer>
-    <div class="container">
-        <p class="contact-info">
-            Hit us up:<br>
-            [span_15](start_span)[span_16](start_span)Email: xmavericksmarkx@gmail.com<br>[span_15](end_span)[span_16](end_span)
-            [span_17](start_span)Text: 478-294-9199<br>[span_17](end_span)
-            [span_18](start_span)www.mavericksmark.com[span_18](end_span)
-        </p>
-        <p class="copyright">&copy; 2026 Maverick's Mark. [span_19](start_span)Made with bad intentions in Cleveland, GA.</p>[span_19](end_span)
-    </div>
-</footer>
+    <section class="custom-cta">
+        <div class="container">
+            <h2>Ready to Ruin Someone's Day?</h2>
+            <p class="cta-text">Text or email your terrible idea right now. Starting at $15 (price depends on size & complexity). Turnaround ~3–5 days.</p>
+            <div class="cta-buttons">
+                <a href="sms:4782949199" class="btn primary">Text Your Idea Now</a>
+                <a href="mailto:mavricksmark@gmail.com?subject=Custom%20Decal%20Idea" class="btn secondary">Email the Madness</a>
+            </div>
+            <p class="fineprint">No refunds on custom work. We only judge in private.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="contact-info">
+                Hit us up:<br>
+                Email: mavricksmark@gmail.com<br>
+                Text: 478-294-9199<br>
+                www.mavericksmark.com
+            </p>
+            <p class="copyright">&copy; 2026 Maverick's Mark. Made with bad intentions in Cleveland, GA.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
